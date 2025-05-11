@@ -98,7 +98,6 @@ for i in range(n_steps):
     
     simulation.step(10)  # Take 10 steps at a time
     
-    # CORRECTED: Use the proper parameters for getState()
     state = simulation.context.getState(getPositions=True, getEnergy=True)
     
     positions = state.getPositions(asNumpy=True)
